@@ -14,6 +14,7 @@ body {
 
 h1{
     align-self: center;
+    color: #FFF;
 }
 
 h5{
@@ -26,7 +27,7 @@ input{
     box-sizing: border-box;
     background-color: #fdcbe6;
     border-radius: 50px;
-    padding: 3%;
+    padding: 5%;
     width: 100%;
     max-width: 600px;
 }
