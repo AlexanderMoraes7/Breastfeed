@@ -1,5 +1,8 @@
 body {
     background:linear-gradient(to right, #f67299,#772976);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Comentários
@@ -8,19 +11,20 @@ Busca do label é feita pelo id.
 
 img {
     width: 95%;
+    max-width: 500px;
     border-radius: 50%;
-    margin-top: 25%;
+    margin-top: 10%;
     margin-left: 2%;
 } 
 
 .Caixa{
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #ffffff;
     border-radius: 10px;
     margin: 5%;
     padding-top: 10%;
+    max-width: 600px;
 }
 
 .Input1{
@@ -52,7 +56,6 @@ img {
 
 .Input2{
     display: flex;
-    align-items: center;
     box-sizing: border-box;
     border: none;
     background-color: #fdcbe6;
@@ -74,26 +77,27 @@ img {
 
 .Input2 i{
     color: #fff;
-    padding: 0px 10px 0px 0px;
+    padding: 10px 5px 0px 0px;
 }
 
 .Text1{
     margin: 0% 0% 3% 0%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .Login button{
     display: flex;
     justify-content: center;
-    align-items: center;
     border: #b3097b;
     background-color: #b3097b;
     border-radius: 50px;
     color: #FFF;
-    width: 78vw;
-    height: 13vw;
+    max-width: 700px;
+    margin: 3%;
+    padding: 3%;
+    width: 90%;
 }
 
 .Login button :hover{
@@ -108,4 +112,34 @@ img {
     flex-direction: row;
     margin: 10% 0% 5% 0%;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 333px) { /* Maior ou igual a 333 pixels*/
+    body {
+        align-items: normal;
+    }
+
+    img {
+        max-width: 300px;
+        align-self: center;
+        margin-top: 0%;
+        margin-left: 0%;
+    } 
+
+    .Caixa{
+        margin-top: 2%;
+        width: 95%;
+        max-width: 400px;
+        padding-top: 3%;
+        align-self: center;
+    }
+}
+
+@media (max-width: 333px) { /* Menor ou igual a 333 pixels*/
+    .Text1{
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+    }
 }
