@@ -7,6 +7,13 @@ body {
 
 /* Comentários
 Busca do label é feita pelo id.
+
+.Login :hover{
+    border: #000;
+    background-color: #e90ae95d;
+    border-radius: 50px;
+    color: #000;
+}
 */
 
 img {
@@ -88,9 +95,6 @@ img {
 }
 
 .Login button{
-    display: flex;
-    justify-content: center;
-    border: #b3097b;
     background-color: #b3097b;
     border-radius: 50px;
     color: #FFF;
@@ -98,13 +102,6 @@ img {
     margin: 3%;
     padding: 3%;
     width: 90%;
-}
-
-.Login button :hover{
-    border: #000;
-    background-color: #e90ae95d;
-    border-radius: 50px;
-    color: #000;
 }
 
 .Text2{
